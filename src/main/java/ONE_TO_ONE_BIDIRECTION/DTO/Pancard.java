@@ -10,7 +10,7 @@ public class Pancard {
 	private int pancardId;
 	private String name;
 	private String address;
-	@OneToOne
+	@OneToOne( mappedBy = "pancard")
 	private Person person;
 
 	public int getPancardId() {

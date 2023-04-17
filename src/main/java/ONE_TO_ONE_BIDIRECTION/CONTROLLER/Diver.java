@@ -10,18 +10,21 @@ public class Diver
 		Person person = new Person();
 		Pancard pancard = new Pancard();
 		
-		person.setPersonId(1);
-		person.setName("saurabh");
-		person.setAddress("PUNE");
+		person.setPersonId(2);
+		person.setName("rakesh");
+		person.setAddress("KARVENAGAR");
 		person.setPancard(pancard);
 		
-		pancard.setPancardId(1001);
-		pancard.setName("SG");
-		pancard.setAddress("Pune");
+		pancard.setPancardId(1002);
+		pancard.setName("RP");
+		pancard.setAddress("KHOLHAPUR");
 		pancard.setPerson(person);
 		
 		Dao dao = new Dao();
-		dao.savePerson(person);
+//		dao.savePerson(person);
+//		dao.deletePerson(1);
+//		dao.updatePerson(1);
+		dao.fetchPerson(1);
 	}
 
 }

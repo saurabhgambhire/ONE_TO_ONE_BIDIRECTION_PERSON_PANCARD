@@ -2,6 +2,7 @@ package ONE_TO_ONE_BIDIRECTION.DTO;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
 import org.hibernate.annotations.Cascade;
@@ -15,6 +16,7 @@ public class Person {
 	private String address;
 	@Cascade( CascadeType.ALL)
 	@OneToOne
+	@JoinColumn
 	private Pancard pancard;
 
 	public int getPersonId() {
